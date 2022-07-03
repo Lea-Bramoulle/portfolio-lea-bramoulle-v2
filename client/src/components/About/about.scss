@@ -1,0 +1,94 @@
+@use 'src/styles/vars';
+
+.about {
+  margin: 6rem auto; 
+  padding:0 0 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.4;
+
+  &__left {
+    width:50%;
+    padding-right: 3rem;
+  }
+
+  &__left-title {
+    font-size: 2rem;
+  }
+
+  &__left-text {
+    padding:4rem 0 3rem 0;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+  }
+
+  &__btn {
+    text-decoration: none;
+    border : solid 2px vars.$dark;
+    color:vars.$dark;
+    padding:0.8rem 1.2rem; 
+    border-radius : 25px; 
+  }
+
+  &__right {
+    width:50%;
+    background-color: rgba(226, 230, 234,0.2);
+    display: flex;
+    padding:0.2rem;
+    height:22rem;
+    overflow: hidden;
+
+    &--right {
+      width: 25%;
+    }
+
+    &--left {
+      transform: translateY(-340px) ; // 0 -340px -670px
+      transition-duration: 2s;
+    }
+
+  }
+
+  &__card-title {
+    font-size: 0.8rem;
+    background-color: rgba(226, 230, 234,0.2);
+    border-radius: 25px;
+    padding:1rem 1.5rem;
+    margin : 1.5rem 0 1rem 1.5rem;
+    width:100%;
+    cursor: pointer;
+  }
+
+  &__competences {
+    padding:2rem 4rem;
+  }
+
+  &__competences li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.02ch;
+
+    & i {
+      padding-right: 0.5rem;
+    }
+  }
+  
+}
+
+.active-color {
+  background-color: #C6CAFB;
+  color: vars.$primary;
+  font-weight: bold;
+}
+
+@media (max-width:700px) {
+
+  .about__left, .about__middle, .about__right {
+      width:100%;
+      margin:1.5rem 0;
+  }
+}

@@ -1,0 +1,40 @@
+@use './../../styles/vars';
+
+.formations {
+    width: 70%;
+    margin:4rem auto;
+    padding-top: 4rem;
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__container {
+        padding:4rem 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width:25%;
+        padding-right:1rem;
+
+        &__title {
+            font-size: 1.2rem;
+            color: vars.$primary;
+            line-height: 1.6rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+            padding:1.2rem 0 0.8rem 0;
+        }
+
+        &__span {
+            font-size: 1rem;
+            color:grey;
+        }
+    }
+}
+

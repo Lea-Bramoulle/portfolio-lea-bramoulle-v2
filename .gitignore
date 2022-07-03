@@ -1,0 +1,14 @@
+client/.env
+client/node_modules/
+client/dist/
+
+client/.DS_Store
+client/Thumbs.db
+
+client/yarn-error.log
+client/.env*
+client/!.env*.example
+
+client/.vscode/
+
+node_modules

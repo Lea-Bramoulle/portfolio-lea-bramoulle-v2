@@ -1,0 +1,50 @@
+@use 'src/styles/vars';
+
+.header {
+  width:65%;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    &__logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &__nav-list {
+      display: flex;
+      padding: 2rem 0;
+      margin-top:0.5rem;
+    }
+    
+}
+
+.nav__btn {
+  padding : 0 1rem;
+  text-decoration: none;
+  color: vars.$light;
+}
+
+.nav__btn:hover {
+  color: vars.$dark;
+  transition-duration: 200ms;
+}
+
+.nav__btn-active {
+  text-decoration: none;
+  color : vars.$primary;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.nav__btn-cv {
+  text-decoration: none;
+  background-color: vars.$primary-light;
+  color: vars.$primary;
+  font-weight: bold;
+  padding:1rem 1.5rem; 
+  border-radius : 25px; 
+  margin-left:1rem;
+  margin-right:-5px;
+}

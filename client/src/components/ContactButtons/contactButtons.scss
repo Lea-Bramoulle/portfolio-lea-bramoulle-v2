@@ -1,0 +1,14 @@
+.contact-fixed {
+  position:fixed;
+  top:35%;
+  left:0;
+  background-color: rgba(226, 230, 234, 0.7);
+  border-radius:0 25px 25px 0;
+  padding: 3rem 0.5rem;
+  color:white;
+  text-shadow: 2px 2px 20px rgba(5, 5, 5, 0.64);
+}
+
+.contact-fixed li {
+  padding:0.4rem;
+}

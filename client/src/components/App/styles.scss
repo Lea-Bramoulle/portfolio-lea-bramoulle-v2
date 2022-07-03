@@ -1,0 +1,35 @@
+@use './../../styles/vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+.app {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  background-image: url('./../../assets/images/back-3.png');
+  background-position: center;
+  background-size: 110%;
+  height:100vh;
+}
+
+.hero:before {
+  opacity:0.60.4;
+}
+
+.primary-color {
+  color: vars.$third;
+}
+
+.container {
+  width:70%;
+  margin:auto;
+}
+
+.portfolio__link {
+  color: vars.$primary;
+  background-image: url(src/assets/images/bg-circle.png);
+  background-repeat: no-repeat;
+  block-size: contain;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
